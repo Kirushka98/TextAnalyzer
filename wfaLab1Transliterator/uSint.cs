@@ -27,8 +27,9 @@ namespace Sint
                     B();
                     if (Lex.enumPToken == TToken.lxmDot)
                         throw new Exception("Текст верный.");
+
                     else
-                        throw new Exception("Ожидалось .");
+                        throw new Exception("Ожидалось запятая либо точка");
                 }
                 else throw new Exception("Ожидалось -");
             }
@@ -64,19 +65,22 @@ namespace Sint
             A();
             if (Lex.enumPToken == TToken.lxmComma)
             {
-                Lex.NextToken();
                 C();
             }
         }
         public void C()
         {
-
-            A();
             if (Lex.enumPToken == TToken.lxmComma)
             {
                 Lex.NextToken();
-                C();
+                A();
+                if (Lex.enumPToken == TToken.lxmComma)
+                {
+                    C();
+                }
             }
+            else
+                throw new Exception("Ожидалось запятая ");
         }
     }
 }

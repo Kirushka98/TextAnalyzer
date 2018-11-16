@@ -27,3 +27,13 @@ C:\Users\Marat\Desktop\3 курс\1сем\какой-то предмет\Lab1_Tr
 C:\Users\Marat\Desktop\3 курс\1сем\какой-то предмет\Lab1_Transliterator\wfaLab1Lex\wfaLab1Transliterator\obj\Debug\wfaLab1Lex.csproj.CoreCompileInputs.cache
 C:\Users\Marat\Desktop\3 курс\1сем\какой-то предмет\Lab1_Transliterator\wfaLab1Lex\wfaLab1Transliterator\obj\Debug\wfaLab1Transliterator.exe
 C:\Users\Marat\Desktop\3 курс\1сем\какой-то предмет\Lab1_Transliterator\wfaLab1Lex\wfaLab1Transliterator\obj\Debug\wfaLab1Transliterator.pdb
+C:\Users\Marat\Desktop\3 курс\1сем\какой-то предмет\Lab4_Transliterator — копия\wfaLab4Lex\wfaLab1Transliterator\obj\Debug\wfaLab1Lex.csprojAssemblyReference.cache
+C:\Users\Marat\Desktop\3 курс\1сем\какой-то предмет\Lab4_Transliterator — копия\wfaLab4Lex\wfaLab1Transliterator\obj\Debug\wfaLab1Transliterator.Properties.Resources.resources
+C:\Users\Marat\Desktop\3 курс\1сем\какой-то предмет\Lab4_Transliterator — копия\wfaLab4Lex\wfaLab1Transliterator\obj\Debug\nsLexMainForm.Form1.resources
+C:\Users\Marat\Desktop\3 курс\1сем\какой-то предмет\Lab4_Transliterator — копия\wfaLab4Lex\wfaLab1Transliterator\obj\Debug\wfaLab1Lex.csproj.GenerateResource.cache
+C:\Users\Marat\Desktop\3 курс\1сем\какой-то предмет\Lab4_Transliterator — копия\wfaLab4Lex\wfaLab1Transliterator\obj\Debug\wfaLab1Lex.csproj.CoreCompileInputs.cache
+C:\Users\Marat\Desktop\3 курс\1сем\какой-то предмет\Lab4_Transliterator — копия\wfaLab4Lex\wfaLab1Transliterator\obj\Debug\wfaLab1Transliterator.exe
+C:\Users\Marat\Desktop\3 курс\1сем\какой-то предмет\Lab4_Transliterator — копия\wfaLab4Lex\wfaLab1Transliterator\obj\Debug\wfaLab1Transliterator.pdb
+C:\Users\Marat\Desktop\3 курс\1сем\какой-то предмет\Lab4_Transliterator — копия\wfaLab4Lex\wfaLab1Transliterator\bin\Debug\wfaLab1Transliterator.exe.config
+C:\Users\Marat\Desktop\3 курс\1сем\какой-то предмет\Lab4_Transliterator — копия\wfaLab4Lex\wfaLab1Transliterator\bin\Debug\wfaLab1Transliterator.exe
+C:\Users\Marat\Desktop\3 курс\1сем\какой-то предмет\Lab4_Transliterator — копия\wfaLab4Lex\wfaLab1Transliterator\bin\Debug\wfaLab1Transliterator.pdb

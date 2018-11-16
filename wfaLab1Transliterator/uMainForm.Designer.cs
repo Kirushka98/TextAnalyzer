@@ -30,9 +30,13 @@
         {
             this.btnFStart = new System.Windows.Forms.Button();
             this.tbFSource = new System.Windows.Forms.TextBox();
-            this.tbFMessage = new System.Windows.Forms.TextBox();
             this.lblFSource = new System.Windows.Forms.Label();
-            this.lblFMessage = new System.Windows.Forms.Label();
+            this.symbols = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.numbers = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.reserved = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnFStart
@@ -56,13 +60,6 @@
             this.tbFSource.Size = new System.Drawing.Size(456, 146);
             this.tbFSource.TabIndex = 1;
             // 
-            // tbFMessage
-            // 
-            this.tbFMessage.Location = new System.Drawing.Point(12, 230);
-            this.tbFMessage.Name = "tbFMessage";
-            this.tbFMessage.Size = new System.Drawing.Size(456, 20);
-            this.tbFMessage.TabIndex = 2;
-            // 
             // lblFSource
             // 
             this.lblFSource.AutoSize = true;
@@ -72,23 +69,78 @@
             this.lblFSource.TabIndex = 3;
             this.lblFSource.Text = "Исходный текст";
             // 
-            // lblFMessage
+            // symbols
             // 
-            this.lblFMessage.AutoSize = true;
-            this.lblFMessage.Location = new System.Drawing.Point(19, 217);
-            this.lblFMessage.Name = "lblFMessage";
-            this.lblFMessage.Size = new System.Drawing.Size(65, 13);
-            this.lblFMessage.TabIndex = 4;
-            this.lblFMessage.Text = "Сообщения";
+            this.symbols.AcceptsReturn = true;
+            this.symbols.AcceptsTab = true;
+            this.symbols.Location = new System.Drawing.Point(23, 239);
+            this.symbols.Multiline = true;
+            this.symbols.Name = "symbols";
+            this.symbols.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.symbols.Size = new System.Drawing.Size(213, 149);
+            this.symbols.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(23, 220);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Символы";
+            // 
+            // numbers
+            // 
+            this.numbers.AcceptsReturn = true;
+            this.numbers.AcceptsTab = true;
+            this.numbers.Location = new System.Drawing.Point(270, 239);
+            this.numbers.Multiline = true;
+            this.numbers.Name = "numbers";
+            this.numbers.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.numbers.Size = new System.Drawing.Size(213, 149);
+            this.numbers.TabIndex = 7;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(267, 223);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Цифры";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(511, 223);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(95, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "РезервдСимболс";
+            // 
+            // reserved
+            // 
+            this.reserved.AcceptsReturn = true;
+            this.reserved.AcceptsTab = true;
+            this.reserved.Location = new System.Drawing.Point(514, 239);
+            this.reserved.Multiline = true;
+            this.reserved.Name = "reserved";
+            this.reserved.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.reserved.Size = new System.Drawing.Size(213, 149);
+            this.reserved.TabIndex = 9;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 262);
-            this.Controls.Add(this.lblFMessage);
+            this.ClientSize = new System.Drawing.Size(761, 416);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.reserved);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.numbers);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.symbols);
             this.Controls.Add(this.lblFSource);
-            this.Controls.Add(this.tbFMessage);
             this.Controls.Add(this.tbFSource);
             this.Controls.Add(this.btnFStart);
             this.Name = "Form1";
@@ -102,9 +154,13 @@
 
         private System.Windows.Forms.Button btnFStart;
         private System.Windows.Forms.TextBox tbFSource;
-        private System.Windows.Forms.TextBox tbFMessage;
         private System.Windows.Forms.Label lblFSource;
-        private System.Windows.Forms.Label lblFMessage;
+        private System.Windows.Forms.TextBox symbols;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox numbers;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox reserved;
     }
 }
 

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using nsLex;
 using Sint;
+using tabHash;
 
 namespace nsLexMainForm
 {
@@ -17,34 +18,48 @@ namespace nsLexMainForm
         public Form1()
         {
             InitializeComponent();
-            //            tbFSource.Lines.Count = 2;
             tbFSource.AppendText("bc(010):-bc(010),bc(010).\r\n");
-            //            int n = tbFSource.Lines.Length;
-            //            n = n;
         }
 
         private void btnFStart_Click(object sender, EventArgs e)
         {
-            cSint Lex = new cSint();
-            Lex.Lex.strPSource = tbFSource.Lines;
-            Lex.Lex.strPMessage = tbFMessage.Lines;
-            Lex.Lex.enumPState = TState.Start;
+            TablesHash th = new TablesHash();
+            CLex Lex = new CLex();
+            Lex.strPSource = tbFSource.Lines;
+            Lex.enumPState = TState.Start;
+
+            symbols.Text = "";
+            numbers.Text = "";
+            reserved.Text = "";
             try
             {
-                while (Lex.Lex.enumPState != TState.Finish)
+                while (Lex.enumPState != TState.Finish)
                 {
-                    Lex.Lex.NextToken();
-                    Lex.S();
+                    Lex.NextToken();
+                    String word = Lex.strPLexicalUnit;
+                    th.add_word(word, Lex.enumPToken);
+
+                }
+                for (int i = 0; i < th.count_letter_words; i++)
+                {
+                    symbols.Text += th.letter_words[i] + System.Environment.NewLine;
+                }
+                for (int i = 0; i < th.count_digit_words; i++)
+                {
+                    numbers.Text += th.digit_words[i] + System.Environment.NewLine;
+                }
+                for (int i = 0; i < th.count_symbolic_words; i++)
+                {
+                    reserved.Text += th.symbolic_words[i] + System.Environment.NewLine;
                 }
             }
             catch (Exception exc)
             {
-                tbFMessage.Text += exc.Message;
                 tbFSource.Select();
                 tbFSource.SelectionStart = 0;
                 int n = 0;
-                for (int i = 0; i < Lex.Lex.intPSourceRowSelection; i++) n += tbFSource.Lines[i].Length + 2;
-                n += Lex.Lex.intPSourceColSelection;
+                for (int i = 0; i < Lex.intPSourceRowSelection; i++) n += tbFSource.Lines[i].Length + 2;
+                n += Lex.intPSourceColSelection;
                 tbFSource.SelectionLength = n;
             }
         }
